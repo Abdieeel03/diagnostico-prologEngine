@@ -4,3 +4,4 @@
 :- use_module(knowledge/rules/diagnostico).
 
 :- consult('routes/health_routes.pl').
+:- consult('routes/diagnostico_routes.pl').

@@ -70,6 +70,18 @@ Errores comunes:
 - `400`: falta el campo `sintomas` en el body.
 - `500`: error interno al procesar el diagnostico.
 
+## Plantilla de Curl para pruebas a POST /diagnostico
+
+Para realizar pruebas a este motor se puede usar curl directamente, ejecutando el siguiente comando:
+
+```bash
+curl -X POST http://localhost:5000/diagnostico \
+-H "Content-Type: application/json" \
+-d '{"sintomas":["tos", "dolor_cabeza"]}' | jq
+```
+
+> Los sintomas se envían por el body, mediante un arreglo con los sintomas.
+
 ## Logica de diagnostico
 
 El motor compara los sintomas del usuario contra los sintomas conocidos de cada enfermedad. El puntaje se calcula como:

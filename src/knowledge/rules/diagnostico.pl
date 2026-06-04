@@ -13,7 +13,7 @@ diagnostico(SintomasUsuario, Enfermedad, Coincidencias, Score) :-
     sintoma(Enfermedad, Sintoma),
     SintomasEnfermedad
   ),
-  
+
   intersection(
     SintomasUsuario,
     SintomasEnfermedad,
@@ -22,8 +22,12 @@ diagnostico(SintomasUsuario, Enfermedad, Coincidencias, Score) :-
 
   length(SintomasCoincidentes, Coincidencias),
   length(SintomasEnfermedad, TotalSintomas),
+  length(SintomasUsuario, TotalUsuario),
 
   TotalSintomas > 0,
+  TotalUsuario > 0,
   Coincidencias > 0,
 
-  Score is Coincidencias / TotalSintomas.
+  ScoreEnfermedad is Coincidencias / TotalSintomas,
+  ScoreUsuario is Coincidencias / TotalUsuario,
+  Score is (ScoreEnfermedad + ScoreUsuario) / 2.

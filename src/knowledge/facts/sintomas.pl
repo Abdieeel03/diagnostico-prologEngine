@@ -6,7 +6,7 @@ sintoma(gripe, fiebre).
 sintoma(gripe, tos).
 sintoma(gripe, dolor_cabeza).
 sintoma(gripe, dolor_garganta).
-sintoma(gripe, dolores_musculares).
+sintoma(gripe, dolor_muscular).
 sintoma(gripe, cansancio).
 sintoma(gripe, congestion_nasal).
 sintoma(gripe, escalofrios).
@@ -234,7 +234,7 @@ sintoma(paperas, inflamacion_parotidas).
 sintoma(paperas, dolor_masticar).
 sintoma(paperas, fiebre).
 sintoma(paperas, dolor_cabeza).
-sintoma(paperas, dolores_musculares).
+sintoma(paperas, dolor_muscular).
 sintoma(paperas, cansancio).
 sintoma(paperas, perdida_apetito).
 sintoma(paperas, hinchazon_testicular).

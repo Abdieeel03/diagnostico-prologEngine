@@ -239,3 +239,183 @@ sintoma(paperas, cansancio).
 sintoma(paperas, perdida_apetito).
 sintoma(paperas, hinchazon_testicular).
 sintoma(paperas, dolor_tragar).
+
+sintoma(hipertension_arterial, dolor_cabeza).
+sintoma(hipertension_arterial, mareos).
+sintoma(hipertension_arterial, vision_borrosa).
+sintoma(hipertension_arterial, zumbido_oidos).
+sintoma(hipertension_arterial, palpitaciones).
+sintoma(hipertension_arterial, fatiga).
+sintoma(hipertension_arterial, dificultad_respiratoria).
+sintoma(hipertension_arterial, sangrado_nasal).
+
+sintoma(hipotension_arterial, mareos).
+sintoma(hipotension_arterial, desmayos).
+sintoma(hipotension_arterial, vision_borrosa).
+sintoma(hipotension_arterial, nauseas).
+sintoma(hipotension_arterial, cansancio).
+sintoma(hipotension_arterial, confusion).
+sintoma(hipotension_arterial, palpitaciones).
+sintoma(hipotension_arterial, frio_extremidades).
+
+sintoma(diabetes_tipo_1, poliuria).
+sintoma(diabetes_tipo_1, polidipsia).
+sintoma(diabetes_tipo_1, perdida_peso).
+sintoma(diabetes_tipo_1, vision_borrosa).
+sintoma(diabetes_tipo_1, cansancio).
+sintoma(diabetes_tipo_1, hambre_extrema).
+sintoma(diabetes_tipo_1, irritabilidad).
+sintoma(diabetes_tipo_1, infecciones_frecuentes).
+
+sintoma(diabetes_tipo_2, poliuria).
+sintoma(diabetes_tipo_2, polidipsia).
+sintoma(diabetes_tipo_2, vision_borrosa).
+sintoma(diabetes_tipo_2, cansancio).
+sintoma(diabetes_tipo_2, heridas_lenta_cicatrizacion).
+sintoma(diabetes_tipo_2, hormigueo_extremidades).
+sintoma(diabetes_tipo_2, infecciones_frecuentes).
+sintoma(diabetes_tipo_2, perdida_peso).
+
+sintoma(hipotiroidismo, cansancio).
+sintoma(hipotiroidismo, aumento_peso).
+sintoma(hipotiroidismo, intolerancia_frio).
+sintoma(hipotiroidismo, piel_seca).
+sintoma(hipotiroidismo, cabello_fragil).
+sintoma(hipotiroidismo, estrenimiento).
+sintoma(hipotiroidismo, depresion).
+sintoma(hipotiroidismo, voz_ronca).
+
+sintoma(hipertiroidismo, perdida_peso).
+sintoma(hipertiroidismo, palpitaciones).
+sintoma(hipertiroidismo, nerviosismo).
+sintoma(hipertiroidismo, intolerancia_calor).
+sintoma(hipertiroidismo, temblores).
+sintoma(hipertiroidismo, sudoracion_excesiva).
+sintoma(hipertiroidismo, ojos_prominentes).
+sintoma(hipertiroidismo, diarrea).
+
+sintoma(anemia_ferropenica, cansancio).
+sintoma(anemia_ferropenica, palidez).
+sintoma(anemia_ferropenica, dificultad_respiratoria).
+sintoma(anemia_ferropenica, dolor_cabeza).
+sintoma(anemia_ferropenica, palpitaciones).
+sintoma(anemia_ferropenica, unas_quebradizas).
+sintoma(anemia_ferropenica, mareos).
+sintoma(anemia_ferropenica, frio_extremidades).
+
+sintoma(obesidad, dificultad_respiratoria).
+sintoma(obesidad, dolor_articular).
+sintoma(obesidad, cansancio).
+sintoma(obesidad, sudoracion_excesiva).
+sintoma(obesidad, apnea_sueno).
+sintoma(obesidad, reflujo_gastrico).
+sintoma(obesidad, ronquidos).
+sintoma(obesidad, inflamacion_articulaciones).
+
+sintoma(hipercolesterolemia, xantomas).
+sintoma(hipercolesterolemia, xantelasmas).
+sintoma(hipercolesterolemia, arco_corneal).
+sintoma(hipercolesterolemia, dolor_pecho).
+sintoma(hipercolesterolemia, fatiga).
+sintoma(hipercolesterolemia, angina).
+sintoma(hipercolesterolemia, calambres_piernas).
+sintoma(hipercolesterolemia, mareos).
+
+sintoma(sindrome_metabolico, obesidad_abdominal).
+sintoma(sindrome_metabolico, presion_arterial_alta).
+sintoma(sindrome_metabolico, azucar_elevada).
+sintoma(sindrome_metabolico, trigliceridos_altos).
+sintoma(sindrome_metabolico, cansancio).
+sintoma(sindrome_metabolico, dolor_cabeza).
+sintoma(sindrome_metabolico, mareos).
+sintoma(sindrome_metabolico, vision_borrosa).
+
+sintoma(migrana, dolor_cabeza_intenso).
+sintoma(migrana, nauseas).
+sintoma(migrana, vomitos).
+sintoma(migrana, sensibilidad_luz).
+sintoma(migrana, sensibilidad_sonido).
+sintoma(migrana, vision_borrosa).
+sintoma(migrana, aura_visual).
+sintoma(migrana, hormigueo_facial).
+
+sintoma(cefalea_tensional, dolor_cabeza_opresivo).
+sintoma(cefalea_tensional, sensibilidad_cuero_cabelludo).
+sintoma(cefalea_tensional, tension_cervical).
+sintoma(cefalea_tensional, tension_hombros).
+sintoma(cefalea_tensional, irritabilidad).
+sintoma(cefalea_tensional, dificultad_concentracion).
+sintoma(cefalea_tensional, fatiga).
+sintoma(cefalea_tensional, sensibilidad_luz).
+
+sintoma(epilepsia, convulsiones).
+sintoma(epilepsia, perdida_consciencia).
+sintoma(epilepsia, confusion_postictal).
+sintoma(epilepsia, movimientos_involuntarios).
+sintoma(epilepsia, mirada_fija).
+sintoma(epilepsia, rigidez_muscular).
+sintoma(epilepsia, ausencias).
+sintoma(epilepsia, mordedura_lengua).
+
+sintoma(fibromialgia, dolor_muscular_generalizado).
+sintoma(fibromialgia, fatiga_cronica).
+sintoma(fibromialgia, insomnio).
+sintoma(fibromialgia, puntos_sensibles).
+sintoma(fibromialgia, rigidez_matutina).
+sintoma(fibromialgia, dificultad_concentracion).
+sintoma(fibromialgia, dolor_cabeza).
+sintoma(fibromialgia, sensibilidad_tacto).
+
+sintoma(artritis_reumatoide, dolor_articular).
+sintoma(artritis_reumatoide, inflamacion_articulaciones).
+sintoma(artritis_reumatoide, rigidez_matutina).
+sintoma(artritis_reumatoide, cansancio).
+sintoma(artritis_reumatoide, fiebre_leve).
+sintoma(artritis_reumatoide, perdida_apetito).
+sintoma(artritis_reumatoide, deformacion_articular).
+sintoma(artritis_reumatoide, nodos_reumatoides).
+
+sintoma(infeccion_urinaria, ardor_miccion).
+sintoma(infeccion_urinaria, frecuencia_urinaria).
+sintoma(infeccion_urinaria, orina_turbia).
+sintoma(infeccion_urinaria, orina_con_sangre).
+sintoma(infeccion_urinaria, dolor_pelvis).
+sintoma(infeccion_urinaria, orina_olor_fuerte).
+sintoma(infeccion_urinaria, urgencia_urinaria).
+sintoma(infeccion_urinaria, fiebre_leve).
+
+sintoma(calculos_renales, dolor_lumbar_intenso).
+sintoma(calculos_renales, dolor_irradiado).
+sintoma(calculos_renales, orina_con_sangre).
+sintoma(calculos_renales, nauseas).
+sintoma(calculos_renales, vomitos).
+sintoma(calculos_renales, frecuencia_urinaria).
+sintoma(calculos_renales, ardor_miccion).
+sintoma(calculos_renales, fiebre).
+
+sintoma(conjuntivitis, ojos_rojos).
+sintoma(conjuntivitis, secrecion_ocular).
+sintoma(conjuntivitis, picazon_ocular).
+sintoma(conjuntivitis, lagrimeo).
+sintoma(conjuntivitis, sensibilidad_luz).
+sintoma(conjuntivitis, vision_borrosa).
+sintoma(conjuntivitis, ardor_ocular).
+sintoma(conjuntivitis, costras_parpados).
+
+sintoma(otitis_media, dolor_oido).
+sintoma(otitis_media, fiebre).
+sintoma(otitis_media, perdida_audicion).
+sintoma(otitis_media, zumbido_oido).
+sintoma(otitis_media, supuracion_oido).
+sintoma(otitis_media, presion_oido).
+sintoma(otitis_media, irritabilidad).
+sintoma(otitis_media, dificultad_audicion).
+
+sintoma(otitis_externa, dolor_oido).
+sintoma(otitis_externa, picazon_canal_auditivo).
+sintoma(otitis_externa, enrojecimiento_canal).
+sintoma(otitis_externa, supuracion_oido).
+sintoma(otitis_externa, perdida_audicion).
+sintoma(otitis_externa, sensibilidad_trago).
+sintoma(otitis_externa, inflamacion_canal).
+sintoma(otitis_externa, olor_oido).

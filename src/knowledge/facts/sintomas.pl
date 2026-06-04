@@ -7,16 +7,15 @@ sintoma(gripe, tos).
 sintoma(gripe, dolor_cabeza).
 sintoma(gripe, dolor_garganta).
 sintoma(gripe, dolores_musculares).
-sintoma(gripe, fatiga).
+sintoma(gripe, cansancio).
 sintoma(gripe, congestion_nasal).
 sintoma(gripe, escalofrios).
-sintoma(gripe, debilidad).
 sintoma(gripe, estornudos).
 
 sintoma(covid, fiebre).
 sintoma(covid, tos).
 sintoma(covid, perdida_olfato).
-sintoma(covid, fatiga).
+sintoma(covid, cansancio).
 sintoma(covid, perdida_gusto).
 sintoma(covid, dificultad_respiratoria).
 sintoma(covid, dolor_cuerpo).
@@ -47,10 +46,10 @@ sintoma(dermatitis_atopica, sensibilidad).
 sintoma(dermatitis_atopica, oscurecimiento_piel).
 
 sintoma(dermatitis_de_contacto, erupcion_localizada).
-sintoma(dermatitis_de_contacto, picazon).
+sintoma(dermatitis_de_contacto, prurito).
 sintoma(dermatitis_de_contacto, quemazon).
 sintoma(dermatitis_de_contacto, ampollas).
-sintoma(dermatitis_de_contacto, hinchazon).
+sintoma(dermatitis_de_contacto, inflamacion).
 sintoma(dermatitis_de_contacto, piel_agrietada).
 sintoma(dermatitis_de_contacto, sensibilidad).
 sintoma(dermatitis_de_contacto, descamacion).
@@ -63,7 +62,7 @@ sintoma(urticaria, picazon_severa).
 sintoma(urticaria, angioedema).
 sintoma(urticaria, cambio_forma).
 sintoma(urticaria, migracion_lesiones).
-sintoma(urticaria, ardor).
+sintoma(urticaria, quemazon).
 sintoma(urticaria, blanqueamiento_presion).
 sintoma(urticaria, empeoramiento_calor).
 sintoma(urticaria, fiebre_leve).
@@ -71,7 +70,7 @@ sintoma(urticaria, fiebre_leve).
 sintoma(psoriasis, placas_rojas).
 sintoma(psoriasis, escamas_plateadas).
 sintoma(psoriasis, piel_seca).
-sintoma(psoriasis, picazon).
+sintoma(psoriasis, prurito).
 sintoma(psoriasis, dolor_articular).
 sintoma(psoriasis, uñas_engrosadas).
 sintoma(psoriasis, rigidez_articular).
@@ -84,18 +83,17 @@ sintoma(varicela, dolor_cabeza).
 sintoma(varicela, cansancio).
 sintoma(varicela, perdida_apetito).
 sintoma(varicela, ampollas).
-sintoma(varicela, picazon).
-sintoma(varicela, sarpullido).
+sintoma(varicela, prurito).
+sintoma(varicela, erupcion_cutanea).
 sintoma(varicela, papulas).
-sintoma(varicela, vesiculas).
 sintoma(varicela, costras).
 
 sintoma(herpes_labial, hormigueo).
-sintoma(herpes_labial, picazon).
+sintoma(herpes_labial, prurito).
 sintoma(herpes_labial, ampollas_labios).
 sintoma(herpes_labial, costras).
 sintoma(herpes_labial, fiebre).
-sintoma(herpes_labial, ardor).
+sintoma(herpes_labial, quemazon).
 sintoma(herpes_labial, supuracion).
 sintoma(herpes_labial, ganglios_inflamados).
 sintoma(herpes_labial, dolor_garganta).
@@ -110,11 +108,11 @@ sintoma(herpes_zoster, costras_secas).
 sintoma(herpes_zoster, picazon_intensa).
 sintoma(herpes_zoster, sensibilidad_tacto).
 sintoma(herpes_zoster, dolor_cabeza).
-sintoma(herpes_zoster, fatiga).
+sintoma(herpes_zoster, cansancio).
 
 sintoma(tina, erupcion_anillo).
 sintoma(tina, bordes_elevados).
-sintoma(tina, picazon).
+sintoma(tina, prurito).
 sintoma(tina, descamacion).
 sintoma(tina, perdida_cabello).
 sintoma(tina, piel_agrietada).
@@ -126,10 +124,10 @@ sintoma(tina, mal_olor).
 sintoma(impetigo, llagas_rojas).
 sintoma(impetigo, ampollas).
 sintoma(impetigo, costras_miel).
-sintoma(impetigo, picazon).
+sintoma(impetigo, prurito).
 sintoma(impetigo, exudado_amarillento).
 sintoma(impetigo, dolor_leve).
-sintoma(impetigo, inflamacion_ganglios).
+sintoma(impetigo, ganglios_inflamados).
 sintoma(impetigo, ectima).
 sintoma(impetigo, piel_brillante).
 sintoma(impetigo, propagacion_rapida).
@@ -141,15 +139,15 @@ sintoma(dengue, dolor_retroocular).
 sintoma(dengue, manchas_rojas).
 sintoma(dengue, nauseas).
 sintoma(dengue, vomitos).
-sintoma(dengue, dolor_cabeza_intenso).
+sintoma(dengue, dolor_cabeza).
 sintoma(dengue, cansancio_extremo).
-sintoma(dengue, glandulas_inflamadas).
+sintoma(dengue, ganglios_inflamados).
 
 sintoma(zika, fiebre_leve).
 sintoma(zika, conjuntivitis).
 sintoma(zika, erupcion_pruriginosa).
 sintoma(zika, dolor_articular).
-sintoma(zika, edema).
+sintoma(zika, inflamacion).
 sintoma(zika, dolor_muscular).
 sintoma(zika, dolor_cabeza).
 sintoma(zika, malestar_general).
@@ -181,7 +179,7 @@ sintoma(mononucleosis_infecciosa, inflamacion_amigdalas).
 sintoma(tuberculosis, tos_persistente).
 sintoma(tuberculosis, tos_sangre).
 sintoma(tuberculosis, dolor_pecho).
-sintoma(tuberculosis, fatiga).
+sintoma(tuberculosis, cansancio).
 sintoma(tuberculosis, perdida_peso).
 sintoma(tuberculosis, fiebre).
 sintoma(tuberculosis, sudoraciones_nocturnas).
@@ -195,13 +193,12 @@ sintoma(hepatitis_a, heces_claras).
 sintoma(hepatitis_a, nauseas).
 sintoma(hepatitis_a, vomitos).
 sintoma(hepatitis_a, dolor_abdominal).
-sintoma(hepatitis_a, fatiga).
-sintoma(hepatitis_a, fiebre_baja).
+sintoma(hepatitis_a, cansancio).
+sintoma(hepatitis_a, fiebre_leve).
 sintoma(hepatitis_a, picazon_piel).
 sintoma(hepatitis_a, perdida_apetito).
 
-sintoma(hepatitis_b, fatiga).
-sintoma(hepatitis_b, debilidad).
+sintoma(hepatitis_b, cansancio).
 sintoma(hepatitis_b, dolor_articular).
 sintoma(hepatitis_b, ictericia).
 sintoma(hepatitis_b, orina_oscura).
@@ -216,14 +213,14 @@ sintoma(sarampion, conjuntivitis).
 sintoma(sarampion, coriza).
 sintoma(sarampion, tos_seca).
 sintoma(sarampion, manchas_koplik).
-sintoma(sarampion, exantema).
+sintoma(sarampion, erupcion_cutanea).
 sintoma(sarampion, dolor_garganta).
 sintoma(sarampion, estornudos).
 sintoma(sarampion, sensibilidad_luz).
 sintoma(sarampion, malestar_general).
 
 sintoma(rubeola, fiebre_leve).
-sintoma(rubeola, inflamacion_ganglios).
+sintoma(rubeola, ganglios_inflamados).
 sintoma(rubeola, sarpullido_rosado).
 sintoma(rubeola, dolor_cabeza).
 sintoma(rubeola, ojos_rojos).
@@ -238,8 +235,7 @@ sintoma(paperas, dolor_masticar).
 sintoma(paperas, fiebre).
 sintoma(paperas, dolor_cabeza).
 sintoma(paperas, dolores_musculares).
-sintoma(paperas, fatiga).
+sintoma(paperas, cansancio).
 sintoma(paperas, perdida_apetito).
 sintoma(paperas, hinchazon_testicular).
 sintoma(paperas, dolor_tragar).
-sintoma(paperas, debilidad).

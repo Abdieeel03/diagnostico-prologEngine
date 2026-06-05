@@ -419,3 +419,174 @@ sintoma(otitis_externa, perdida_audicion).
 sintoma(otitis_externa, sensibilidad_trago).
 sintoma(otitis_externa, inflamacion_canal).
 sintoma(otitis_externa, olor_oido).
+
+sintoma(resfriado_comun, congestion_nasal).
+sintoma(resfriado_comun, estornudos).
+sintoma(resfriado_comun, dolor_garganta).
+sintoma(resfriado_comun, tos).
+sintoma(resfriado_comun, malestar_general).
+sintoma(resfriado_comun, fiebre).
+sintoma(resfriado_comun, lagrimeo).
+
+sintoma(faringitis, dolor_garganta).
+sintoma(faringitis, dificultad_tragar).
+sintoma(faringitis, enrojecimiento_garganta).
+sintoma(faringitis, fiebre).
+sintoma(faringitis, ganglios_inflamados).
+sintoma(faringitis, dolor_cabeza).
+sintoma(faringitis, malestar_general).
+sintoma(faringitis, irritacion_garganta).
+
+sintoma(amigdalitis, dolor_garganta).
+sintoma(amigdalitis, fiebre).
+sintoma(amigdalitis, inflamacion_amigdalas).
+sintoma(amigdalitis, dificultad_tragar).
+sintoma(amigdalitis, ganglios_inflamados).
+sintoma(amigdalitis, mal_aliento).
+sintoma(amigdalitis, dolor_oido).
+
+sintoma(laringitis, ronquera).
+sintoma(laringitis, perdida_voz).
+sintoma(laringitis, dolor_garganta).
+sintoma(laringitis, tos_seca).
+sintoma(laringitis, dificultad_hablar).
+sintoma(laringitis, irritacion_garganta).
+sintoma(laringitis, fiebre).
+sintoma(laringitis, carraspera).
+
+sintoma(sinusitis, congestion_nasal).
+sintoma(sinusitis, dolor_facial).
+sintoma(sinusitis, secrecion_nasal).
+sintoma(sinusitis, dolor_cabeza).
+sintoma(sinusitis, fiebre).
+sintoma(sinusitis, perdida_olfato).
+sintoma(sinusitis, dolor_dientes).
+sintoma(sinusitis, tos).
+
+sintoma(rinitis_alergica, estornudos).
+sintoma(rinitis_alergica, congestion_nasal).
+sintoma(rinitis_alergica, secrecion_nasal).
+sintoma(rinitis_alergica, picazon_nasal).
+sintoma(rinitis_alergica, picazon_ocular).
+sintoma(rinitis_alergica, lagrimeo).
+sintoma(rinitis_alergica, congestion_ocular).
+sintoma(rinitis_alergica, tos).
+
+sintoma(bronquitis_aguda, tos).
+sintoma(bronquitis_aguda, dificultad_respiratoria).
+sintoma(bronquitis_aguda, sibilancias).
+sintoma(bronquitis_aguda, dolor_pecho).
+sintoma(bronquitis_aguda, fiebre).
+sintoma(bronquitis_aguda, fatiga).
+sintoma(bronquitis_aguda, congestion_nasal).
+
+sintoma(neumonia, fiebre).
+sintoma(neumonia, tos).
+sintoma(neumonia, dificultad_respiratoria).
+sintoma(neumonia, dolor_pecho).
+sintoma(neumonia, escalofrios).
+sintoma(neumonia, fatiga).
+sintoma(neumonia, sudoracion).
+sintoma(neumonia, confusion).
+
+sintoma(asma, dificultad_respiratoria).
+sintoma(asma, sibilancias).
+sintoma(asma, opresion_pecho).
+sintoma(asma, tos).
+sintoma(asma, fatiga).
+sintoma(asma, respiracion_rapida).
+sintoma(asma, respiracion_sibilante).
+sintoma(asma, ansiedad).
+
+sintoma(epoc, dificultad_respiratoria).
+sintoma(epoc, tos_cronica).
+sintoma(epoc, sibilancias).
+sintoma(epoc, fatiga).
+sintoma(epoc, opresion_pecho).
+sintoma(epoc, infecciones_respiratorias).
+sintoma(epoc, perdida_peso).
+
+sintoma(gastroenteritis, diarrea).
+sintoma(gastroenteritis, nauseas).
+sintoma(gastroenteritis, vomitos).
+sintoma(gastroenteritis, dolor_abdominal).
+sintoma(gastroenteritis, fiebre).
+sintoma(gastroenteritis, deshidratacion).
+sintoma(gastroenteritis, escalofrios).
+sintoma(gastroenteritis, perdida_apetito).
+
+sintoma(gastritis, dolor_abdominal).
+sintoma(gastritis, ardor_estomacal).
+sintoma(gastritis, nauseas).
+sintoma(gastritis, vomitos).
+sintoma(gastritis, hinchazon_abdominal).
+sintoma(gastritis, indigestion).
+sintoma(gastritis, perdida_apetito).
+sintoma(gastritis, eructos).
+
+sintoma(reflujo_gastroesofagico, reflujo_gastrico).
+sintoma(reflujo_gastroesofagico, dolor_pecho).
+sintoma(reflujo_gastroesofagico, dificultad_tragar).
+sintoma(reflujo_gastroesofagico, tos_cronica).
+sintoma(reflujo_gastroesofagico, ronquera).
+sintoma(reflujo_gastroesofagico, dolor_garganta).
+sintoma(reflujo_gastroesofagico, mal_aliento).
+
+sintoma(intoxicacion_alimentaria, diarrea).
+sintoma(intoxicacion_alimentaria, nauseas).
+sintoma(intoxicacion_alimentaria, vomitos).
+sintoma(intoxicacion_alimentaria, dolor_abdominal).
+sintoma(intoxicacion_alimentaria, fiebre).
+sintoma(intoxicacion_alimentaria, debilidad).
+sintoma(intoxicacion_alimentaria, deshidratacion).
+sintoma(intoxicacion_alimentaria, escalofrios).
+
+sintoma(sindrome_del_intestino_irritable, dolor_abdominal).
+sintoma(sindrome_del_intestino_irritable, distension_abdominal).
+sintoma(sindrome_del_intestino_irritable, diarrea).
+sintoma(sindrome_del_intestino_irritable, estrenimiento).
+sintoma(sindrome_del_intestino_irritable, gases).
+sintoma(sindrome_del_intestino_irritable, moco_heces).
+sintoma(sindrome_del_intestino_irritable, sensacion_evacuacion_incompleta).
+sintoma(sindrome_del_intestino_irritable, malestar_abdominal).
+
+sintoma(estrenimiento, dificultad_evacuar).
+sintoma(estrenimiento, heces_duras).
+sintoma(estrenimiento, distension_abdominal).
+sintoma(estrenimiento, gases).
+sintoma(estrenimiento, evacuaciones_poco_frecuentes).
+sintoma(estrenimiento, malestar_abdominal).
+
+sintoma(diarrea_aguda, evacuaciones_frecuentes).
+sintoma(diarrea_aguda, heces_liquidas).
+sintoma(diarrea_aguda, dolor_abdominal).
+sintoma(diarrea_aguda, nauseas).
+sintoma(diarrea_aguda, deshidratacion).
+sintoma(diarrea_aguda, fiebre).
+sintoma(diarrea_aguda, debilidad).
+
+sintoma(colitis, dolor_abdominal).
+sintoma(colitis, diarrea).
+sintoma(colitis, sangre_heces).
+sintoma(colitis, distension_abdominal).
+sintoma(colitis, fiebre).
+sintoma(colitis, fatiga).
+sintoma(colitis, urgencia_evacuacion).
+sintoma(colitis, perdida_peso).
+
+sintoma(apendicitis, dolor_abdominal_derecho).
+sintoma(apendicitis, nauseas).
+sintoma(apendicitis, vomitos).
+sintoma(apendicitis, fiebre).
+sintoma(apendicitis, perdida_apetito).
+sintoma(apendicitis, sensibilidad_abdominal).
+sintoma(apendicitis, estrenimiento).
+sintoma(apendicitis, diarrea).
+
+sintoma(hemorroides, sangrado_heces).
+sintoma(hemorroides, dolor_anal).
+sintoma(hemorroides, picazon_anal).
+sintoma(hemorroides, inflamacion_anal).
+sintoma(hemorroides, molestias_sentarse).
+sintoma(hemorroides, irritacion_anal).
+sintoma(hemorroides, secrecion_mucosa).

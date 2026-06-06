@@ -3,13 +3,14 @@
 
 :- consult('src/app.pl').
 
-server(Port) :- 
+server(Port) :-
   http_server(http_dispatch, [port(Port)]).
 
 :- initialization(main).
 
-main :- 
+main :-
   server(5000),
-  writeln('Servidor iniciado en http://localhost:5000').
+  writeln('Servidor iniciado en http://localhost:5000'),
+  thread_get_message(_).
 
 

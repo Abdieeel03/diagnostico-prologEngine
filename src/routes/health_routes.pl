@@ -1,5 +1,6 @@
 :- use_module(library(http/http_dispatch)).
-:- use_module(library(http/http_json)).
+:- use_module('../utils/response').
+
 
 :- http_handler(
     root(health),
@@ -8,7 +9,10 @@
 ).
 
 health_handler(_Request) :-
-    reply_json_dict(_{
-        status: "ok",
-        service: "prolog-engine"
-    }).
+  success_response(
+    "Servidor Prolog funcionando correctamente",
+    _{
+      service: "prolog-engine",
+      status: "ok"
+    }
+  ).

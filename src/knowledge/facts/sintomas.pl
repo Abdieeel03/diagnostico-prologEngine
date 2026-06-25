@@ -243,9 +243,9 @@ sintoma(paperas, dolor_tragar).
 sintoma(hipertension_arterial, dolor_cabeza).
 sintoma(hipertension_arterial, mareos).
 sintoma(hipertension_arterial, vision_borrosa).
-sintoma(hipertension_arterial, zumbido_oidos).
+sintoma(hipertension_arterial, zumbido_oido).
 sintoma(hipertension_arterial, palpitaciones).
-sintoma(hipertension_arterial, fatiga).
+sintoma(hipertension_arterial, cansancio).
 sintoma(hipertension_arterial, dificultad_respiratoria).
 sintoma(hipertension_arterial, sangrado_nasal).
 
@@ -283,7 +283,7 @@ sintoma(hipotiroidismo, piel_seca).
 sintoma(hipotiroidismo, cabello_fragil).
 sintoma(hipotiroidismo, estrenimiento).
 sintoma(hipotiroidismo, depresion).
-sintoma(hipotiroidismo, voz_ronca).
+sintoma(hipotiroidismo, ronquera).
 
 sintoma(hipertiroidismo, perdida_peso).
 sintoma(hipertiroidismo, palpitaciones).
@@ -316,7 +316,7 @@ sintoma(hipercolesterolemia, xantomas).
 sintoma(hipercolesterolemia, xantelasmas).
 sintoma(hipercolesterolemia, arco_corneal).
 sintoma(hipercolesterolemia, dolor_pecho).
-sintoma(hipercolesterolemia, fatiga).
+sintoma(hipercolesterolemia, cansancio).
 sintoma(hipercolesterolemia, angina).
 sintoma(hipercolesterolemia, calambres_piernas).
 sintoma(hipercolesterolemia, mareos).
@@ -330,7 +330,7 @@ sintoma(sindrome_metabolico, dolor_cabeza).
 sintoma(sindrome_metabolico, mareos).
 sintoma(sindrome_metabolico, vision_borrosa).
 
-sintoma(migrana, dolor_cabeza_intenso).
+sintoma(migrana, dolor_cabeza).
 sintoma(migrana, nauseas).
 sintoma(migrana, vomitos).
 sintoma(migrana, sensibilidad_luz).
@@ -345,7 +345,7 @@ sintoma(cefalea_tensional, tension_cervical).
 sintoma(cefalea_tensional, tension_hombros).
 sintoma(cefalea_tensional, irritabilidad).
 sintoma(cefalea_tensional, dificultad_concentracion).
-sintoma(cefalea_tensional, fatiga).
+sintoma(cefalea_tensional, cansancio).
 sintoma(cefalea_tensional, sensibilidad_luz).
 
 sintoma(epilepsia, convulsiones).
@@ -477,7 +477,7 @@ sintoma(bronquitis_aguda, dificultad_respiratoria).
 sintoma(bronquitis_aguda, sibilancias).
 sintoma(bronquitis_aguda, dolor_pecho).
 sintoma(bronquitis_aguda, fiebre).
-sintoma(bronquitis_aguda, fatiga).
+sintoma(bronquitis_aguda, cansancio).
 sintoma(bronquitis_aguda, congestion_nasal).
 
 sintoma(neumonia, fiebre).
@@ -485,7 +485,7 @@ sintoma(neumonia, tos).
 sintoma(neumonia, dificultad_respiratoria).
 sintoma(neumonia, dolor_pecho).
 sintoma(neumonia, escalofrios).
-sintoma(neumonia, fatiga).
+sintoma(neumonia, cansancio).
 sintoma(neumonia, sudoracion).
 sintoma(neumonia, confusion).
 
@@ -493,15 +493,14 @@ sintoma(asma, dificultad_respiratoria).
 sintoma(asma, sibilancias).
 sintoma(asma, opresion_pecho).
 sintoma(asma, tos).
-sintoma(asma, fatiga).
+sintoma(asma, cansancio).
 sintoma(asma, respiracion_rapida).
-sintoma(asma, respiracion_sibilante).
 sintoma(asma, ansiedad).
 
 sintoma(epoc, dificultad_respiratoria).
-sintoma(epoc, tos_cronica).
+sintoma(epoc, tos_persistente).
 sintoma(epoc, sibilancias).
-sintoma(epoc, fatiga).
+sintoma(epoc, cansancio).
 sintoma(epoc, opresion_pecho).
 sintoma(epoc, infecciones_respiratorias).
 sintoma(epoc, perdida_peso).
@@ -527,7 +526,7 @@ sintoma(gastritis, eructos).
 sintoma(reflujo_gastroesofagico, reflujo_gastrico).
 sintoma(reflujo_gastroesofagico, dolor_pecho).
 sintoma(reflujo_gastroesofagico, dificultad_tragar).
-sintoma(reflujo_gastroesofagico, tos_cronica).
+sintoma(reflujo_gastroesofagico, tos_persistente).
 sintoma(reflujo_gastroesofagico, ronquera).
 sintoma(reflujo_gastroesofagico, dolor_garganta).
 sintoma(reflujo_gastroesofagico, mal_aliento).
@@ -537,7 +536,7 @@ sintoma(intoxicacion_alimentaria, nauseas).
 sintoma(intoxicacion_alimentaria, vomitos).
 sintoma(intoxicacion_alimentaria, dolor_abdominal).
 sintoma(intoxicacion_alimentaria, fiebre).
-sintoma(intoxicacion_alimentaria, debilidad).
+sintoma(intoxicacion_alimentaria, cansancio).
 sintoma(intoxicacion_alimentaria, deshidratacion).
 sintoma(intoxicacion_alimentaria, escalofrios).
 
@@ -563,14 +562,14 @@ sintoma(diarrea_aguda, dolor_abdominal).
 sintoma(diarrea_aguda, nauseas).
 sintoma(diarrea_aguda, deshidratacion).
 sintoma(diarrea_aguda, fiebre).
-sintoma(diarrea_aguda, debilidad).
+sintoma(diarrea_aguda, cansancio).
 
 sintoma(colitis, dolor_abdominal).
 sintoma(colitis, diarrea).
-sintoma(colitis, sangre_heces).
+sintoma(colitis, sangrado_heces).
 sintoma(colitis, distension_abdominal).
 sintoma(colitis, fiebre).
-sintoma(colitis, fatiga).
+sintoma(colitis, cansancio).
 sintoma(colitis, urgencia_evacuacion).
 sintoma(colitis, perdida_peso).
 

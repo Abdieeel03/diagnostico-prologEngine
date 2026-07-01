@@ -4,7 +4,7 @@ Motor de inferencia basado en SWI-Prolog. Expone HTTP en :5000. Lee primero el `
 
 ## 1. Stack
 
-- **SWI-Prolog 8.x+** (`swipl:latest` en Docker —pendiente pinnear).
+- **SWI-Prolog 8.x+** (`swipl:9.2.2` en Docker).
 - Sin gestor de dependencias: se usan sólo librerías estándar de SWI (`library(http/*)`, `library(lists)`).
 - Sin framework web externo: servidor HTTP nativo con `library(http/thread_httpd)` + `library(http/http_dispatch)`.
 
@@ -23,7 +23,7 @@ src/
     diagnostico_routes.pl → POST /diagnostico
   utils/response.pl       → helpers JSON (success_response / error_response)
   tests/                  → carpeta para plunit (vacía por ahora)
-Dockerfile                → swipl:latest, CMD swipl -s server.pl
+Dockerfile                → swipl:9.2.2, HEALTHCHECK, CMD swipl -s server.pl
 ```
 
 ## 3. Convenciones Prolog
@@ -43,8 +43,8 @@ Dockerfile                → swipl:latest, CMD swipl -s server.pl
 | GET | `/health` | — | `{success:true, message, data:{service:"prolog-engine", status:"ok"}}` |
 | POST | `/diagnostico` | `{"sintomas": ["fiebre","tos"]}` | `{success:true, message, data:{diagnosticos:[{enfermedad, coincidencias, score}]}}` |
 
-Errores esperados (pero **rotos hoy**, ver §6):
-- `400` → falta `sintomas` en body.
+Errores:
+- `400` → falta `sintomas` en body (aplicado correctamente vía `error_response/2`).
 - `500` → error interno.
 
 ## 5. Lógica de diagnóstico
@@ -57,13 +57,19 @@ Errores esperados (pero **rotos hoy**, ver §6):
 4. Sólo se devuelven enfermedades con `Coincidencias > 0`.
 5. El orden llega por `findall` en `diagnostico_routes.pl`; el ordenamiento por score lo hace Python.
 
-## 6. Gotchas críticos (no reintroducir)
+## 6. Gotchas (no reintroducir)
 
-1. **`error_response/2` no existe con código HTTP**. Hoy `error_response(Message, Data)` firma es `(Message, Data)`; las llamadas `error_response('...', 400/500)` en `diagnostico_routes.pl` pasan el entero como `Data` e **ignoran el status HTTP** (siempre responde 200). Pendiente: definir `error_response(Message, StatusCode)` que aplique `status(StatusCode)` en `reply_json_dict`.
-2. **Documentación vs código**: el README documenta `score = coincidencias/total_sintomas_enfermedad`, pero el código usa la media con `total_síntomas_usuario`. Sincronizar.
-3. **Sin tests**: `src/tests/` está vacío. Plunit (`use_module(library(plunit))`) sería lo estándar.
-4. **`server.pl`** mantiene el proceso con `thread_get_message(_)` — funciona pero no es la forma más robusta; captura limitada de señales.
-5. **Match exacto**: no hay ponderación por severidad ni control de negaciones ("no tengo fiebre" lo cuenta como fiebre). El README lo admite: *"Aún falta agregar lógica al motor de inteligencia"*.
+### Resueltos (no reintroducir)
+
+1. ~~**`error_response/2` sin código HTTP**~~ — `src/utils/response.pl` ya define `error_response(Message, StatusCode)` que aplica `status(StatusCode)` en `reply_json_dict`. Los errores 400/500 se devuelven correctamente.
+2. ~~**Dockerfile sin pinnear ni HEALTHCHECK**~~ — ya usa `swipl:9.2.2` y tiene `HEALTHCHECK` con `http_get('/health')`.
+
+### Vigentes
+
+1. **Documentación vs código del score**: el README del padre documenta `score = coincidencias/total_sintomas_enfermedad`, pero el código usa media tipo F1: `(coincidencias/total_enf + coincidencias/total_usuario) / 2`. Sincronizar documentación.
+2. **Sin tests**: `src/tests/` está vacío. Plunit (`use_module(library(plunit))`) sería lo estándar.
+3. **`server.pl`** mantiene el proceso con `thread_get_message(_)` — funciona pero no es la forma más robusta; captura limitada de señales.
+4. **Match exacto**: no hay ponderación por severidad ni control de negaciones ("no tengo fiebre" lo cuenta como fiebre). El README lo admite: *"Aún falta agregar lógica al motor de inteligencia"*.
 
 ## 7. Cómo extender
 
@@ -86,14 +92,16 @@ No hay typecheck ni lint para Prolog.
 
 `Dockerfile` actual:
 ```dockerfile
-FROM swipl:latest
+FROM swipl:9.2.2
 WORKDIR /app
 COPY . .
 EXPOSE 5000
+HEALTHCHECK --interval=15s --timeout=5s --start-period=10s --retries=3 \
+  CMD swipl -g "use_module(library(http/http_client)), http_get('http://localhost:5000/health', _, [])" -t halt || exit 1
 CMD ["swipl", "-s", "server.pl"]
 ```
 
-Mejoras pendientes: pinnear `swipl:9.x.x`, agregar `HEALTHCHECK` que curl `/health`, y `.dockerignore` ya existe.
+Mejora pendiente: pinnear imagen por digest SHA para builds 100% reproducibles.
 
 ## 10. Reglas para agentes (específicas)
 

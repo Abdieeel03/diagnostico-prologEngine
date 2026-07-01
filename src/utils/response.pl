@@ -21,12 +21,12 @@ success_response(Message, Data, StatusCode) :-
     data: Data
   }, [status(StatusCode)]).
 
-error_response(Message, Data) :-
+error_response(Message, StatusCode) :-
   reply_json_dict(_{
     success: false,
     message: Message,
-    data: Data
-  }).
+    data: null
+  }, [status(StatusCode)]).
 
 error_response(Message, Data, StatusCode) :-
   reply_json_dict(_{

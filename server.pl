@@ -8,9 +8,17 @@ server(Port) :-
 
 :- initialization(main).
 
+port_from_env(Port) :-
+  catch(getenv('PORT', PortAtom), _, fail),
+  catch(atom_number(PortAtom, Port), _, fail),
+  !.
+
+port_from_env(5000).
+
 main :-
-  server(5000),
-  writeln('Servidor iniciado en http://localhost:5000'),
+  port_from_env(Port),
+  server(Port),
+  format('Servidor iniciado en http://localhost:~w~n', [Port]),
   thread_get_message(_).
 
 
